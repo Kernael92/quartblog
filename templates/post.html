@@ -11,7 +11,11 @@
             <div>No posts available</div>
             {% endfor %}
             <form action="{{url_for('create')}}" method="post" class="create-post">
-                
+                <p>Title: <input type="text" size="30" name="title"></p>
+                <br>
+                <p>Text:<textarea name="text" rows="5" cols="40"></textarea></p>
+                <br>
+                <p><input type="submit" value="Post"></p>
             </form>
 
         </div>
